@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Car myCar = new TransportCar(100, 200);
+        myCar.setWeight(400);
+        System.out.println(myCar.getWeight());
     }
 }

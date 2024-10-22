@@ -1,3 +1,5 @@
+package lesson1;
+
 abstract class Car {
     private boolean freightLoaded;
     private static int passengerWeight = 80;

@@ -1,3 +1,5 @@
+package lesson1;
+
 class SportCar extends Car implements IRideable, ITransportable {
     private static final String typeOfCar = "sportCar";
     private static boolean wing = true;

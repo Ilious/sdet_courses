@@ -1,3 +1,5 @@
+package lesson1;
+
 class TransportCar extends Car implements ITransportable, IRideable {
     static boolean wing = false;
     private static final String typeOfCar = "minibus";

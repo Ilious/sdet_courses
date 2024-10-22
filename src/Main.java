@@ -1,4 +1,4 @@
-    import lesson2.Login;
+import lesson2.Login;
     import lesson2.WrongLoginException;
     import lesson2.WrongPasswordException;
 

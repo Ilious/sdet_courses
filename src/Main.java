@@ -1,10 +1,11 @@
+    import lesson2.Login;
+    import lesson2.WrongLoginException;
+    import lesson2.WrongPasswordException;
+
     import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
-        Car myCar = new TransportCar(100, 200);
-        myCar.setWeight(400);
-        System.out.println(myCar.getWeight());
-        System.out.println(myCar.typeOfCar());
+    public static void main(String[] args) throws WrongLoginException, WrongPasswordException {
+            System.out.println(Login.login("user", "_123", "123"));
     }
 }

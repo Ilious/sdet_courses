@@ -1,4 +1,6 @@
-class SportCar extends Car implements IRideable, ITransportable {
+package lesson_1;
+
+public class SportCar extends Car implements IRideable, ITransportable {
     private static final String typeOfCar = "sportCar";
     private static boolean wing = true;
     private static final int speedLimit = 400;
@@ -9,7 +11,7 @@ class SportCar extends Car implements IRideable, ITransportable {
 
     private static boolean possibleToUpgrade = true;
 
-    SportCar(int weight, int speed) {
+    public SportCar(int weight, int speed) {
         super(weight, speed);
     }
 
@@ -44,7 +46,7 @@ class SportCar extends Car implements IRideable, ITransportable {
     }
 
     @Override
-    protected void setSpeed(int speed) {
+    public void setSpeed(int speed) {
         super.setSpeed(speed);
     }
 

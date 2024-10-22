@@ -1,4 +1,6 @@
-class TransportCar extends Car implements ITransportable, IRideable {
+package lesson_1;
+
+public class TransportCar extends Car implements ITransportable, IRideable {
     static boolean wing = false;
     private static final String typeOfCar = "minibus";
     private static final int speedLimit = 200;
@@ -8,7 +10,7 @@ class TransportCar extends Car implements ITransportable, IRideable {
     private int freightBody = 400;
 
 
-    TransportCar(int weight, int speed) {
+    public TransportCar(int weight, int speed) {
         super(weight, speed);
     }
 
@@ -75,11 +77,11 @@ class TransportCar extends Car implements ITransportable, IRideable {
         this.bodyTruck = bodyTruck;
     }
 
-    private int getFreightBody(){
+    public int getFreightBody(){
         return freightBody;
     }
 
-    private void setFreightBody(int freightBody){
+    public void setFreightBody(int freightBody){
         if (hasBodyTruck()) this.freightBody = freightBody;
     }
 }

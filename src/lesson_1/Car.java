@@ -1,4 +1,6 @@
-abstract class Car {
+package lesson_1;
+
+public abstract class Car {
     private boolean freightLoaded;
     private static int passengerWeight = 80;
     private int weight;
@@ -18,19 +20,19 @@ abstract class Car {
         Car.passengerWeight = passengerWeight;
     }
 
-    protected int getWeight() {
+    public int getWeight() {
         return this.weight;
     }
 
-    protected void setWeight(int weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 
-    protected int getSpeed() {
+    public int getSpeed() {
         return this.speed;
     }
 
-    protected void setSpeed(int speed) {
+    public void setSpeed(int speed) {
         this.speed = speed;
     }
 

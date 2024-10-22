@@ -1,5 +1,5 @@
 public interface ITransportable {
-    String isItTransport(int var1);
+    String isItTransport(int weightFreight);
 
-    String checkFreight(int var1);
+    String checkFreight(int weightFreight);
 }

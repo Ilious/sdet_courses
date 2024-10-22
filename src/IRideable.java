@@ -1,5 +1,5 @@
 public interface IRideable {
     String isItRide();
 
-    String boostSpeed(int var1);
+    String boostSpeed(int maxSpeed);
 }

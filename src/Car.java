@@ -3,6 +3,7 @@ abstract class Car {
     private static int passengerWeight = 80;
     private int weight;
     private int speed;
+    private String typeOfCar;
 
     Car(int weight, int speed) {
         this.weight = weight;
@@ -39,5 +40,9 @@ abstract class Car {
 
     public void setFreightLoaded(boolean freightLoaded) {
         this.freightLoaded = freightLoaded;
+    }
+
+    public String typeOfCar() {
+        return typeOfCar;
     }
 }

@@ -1,4 +1,4 @@
-package lesson_1;
+package lesson1;
 
 public abstract class Car {
     private boolean freightLoaded;

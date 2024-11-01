@@ -1,6 +1,6 @@
-package lesson_1;
+package lesson1;
 
-public class SportCar extends Car implements IRideable, ITransportable {
+class SportCar extends Car implements IRideable, ITransportable {
     private static final String typeOfCar = "sportCar";
     private static boolean wing = true;
     private static final int speedLimit = 400;

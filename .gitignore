@@ -1,7 +1,6 @@
 ### IntelliJ IDEA ###
 out/
-.idea/*
-/.idea
+**/.idea/
 
 ### Eclipse ###
 .apt_generated

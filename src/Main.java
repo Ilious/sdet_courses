@@ -4,7 +4,7 @@ import lesson2.WrongPasswordException;
 
 
 public class Main {
-    public static void main(String[] args) throws WrongLoginException, WrongPasswordException {
+    public static void main(String[] args) {
             System.out.println(Login.login("user", "_123", "123"));
     }
 }

@@ -3,8 +3,7 @@ package lesson2;
 import java.util.Arrays;
 
 public class Login {
-    public static boolean login(String login, String password, String confirmPassword) throws WrongLoginException,
-            WrongPasswordException{
+    public static boolean login(String login, String password, String confirmPassword){
 
         try{
             if (!login.matches("^[a-zA-Z0-9_]+$")) return false;

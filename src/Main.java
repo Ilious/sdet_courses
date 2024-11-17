@@ -25,6 +25,5 @@ public class Main {
             System.out.println(moneySavings);
 
             System.out.println(Money.discriminant(4, 5, 1));
-
     }
 }

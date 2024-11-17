@@ -8,7 +8,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        Lesson4 currentLesson = new Lesson4();
+        new Lesson4();
+//        printTasksTill4();
     }
 
     private static void printTasksTill4(){

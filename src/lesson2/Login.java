@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Login {
     public static boolean login(String login, String password, String confirmPassword){
+
         try{
             if (!login.matches("^[a-zA-Z0-9_]+$")) return false;
             else if (login.length() >= 20) throw new WrongLoginException("length of login is more than 19");

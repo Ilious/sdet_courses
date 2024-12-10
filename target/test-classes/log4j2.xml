@@ -13,13 +13,13 @@
     </Appenders>
     <Loggers>
         <!-- Рутовый логгер -->
-        <Root level="info">
+        <Root level="debug">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="File"/>
         </Root>
 
         <!-- Логгер для специфичного пакета -->
-        <Logger name="lesson_5" level="info" additivity="false">
+        <Logger name="lesson_5" level="debug" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
     </Loggers>

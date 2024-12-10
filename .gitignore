@@ -1,6 +1,9 @@
 ### IntelliJ IDEA ###
 out/
 **/.idea/
+target/
+JavaCourses.iml
+logs/
 
 ### Eclipse ###
 .apt_generated

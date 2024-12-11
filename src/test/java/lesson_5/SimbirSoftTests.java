@@ -26,7 +26,7 @@ public class SimbirSoftTests {
 
     @Test
     void bankFeedbackTest(){
-        _logger.debug("SimbirSoftTest.testWeather");
+        _logger.debug("SimbirSoftTest.bankFeedbackTest");
         open(baseUrl);
 
         $(By.xpath("//*[contains(@class, 'gh-nav-item--solutions')]"))
@@ -46,7 +46,7 @@ public class SimbirSoftTests {
 
     @Test
     void test(){
-        _logger.debug("SimbirSoftTest.testMaps");
+        _logger.debug("SimbirSoftTest.test");
         open(baseUrl);
 
         $(By.xpath("//div[@class=\"gh-nav-item \"]//a[contains(text(), \"Вакансии\")]"))

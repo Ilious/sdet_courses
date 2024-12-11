@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN">
+<Configuration status="debug">
     <Appenders>
         <!-- Консольный аппендер -->
         <Console name="Console" target="SYSTEM_OUT">
@@ -13,14 +13,14 @@
     </Appenders>
     <Loggers>
         <!-- Рутовый логгер -->
-        <Root level="info">
+        <Root level="debug">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="File"/>
         </Root>
 
         <!-- Логгер для специфичного пакета -->
-        <Logger name="lesson_5" level="info" additivity="false">
-            <AppenderRef ref="Console"/>
+        <Logger name="lesson_5" level="debug" additivity="false">
+            <AppenderRef ref="File"/>
         </Logger>
     </Loggers>
 </Configuration>

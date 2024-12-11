@@ -35,7 +35,11 @@ public class SimbirSoftTests {
         $(By.linkText("Для банков"))
                 .shouldHave(text("Для банков"))
                 .click();
-        webdriver().driver().switchTo().window(1);
+
+        _logger.debug("SimbirSoftTest.bankFeedbackTest => opening new window");
+        int lastWindow = webdriver().driver().getWebDriver().getWindowHandles().size() - 1;
+        webdriver().driver().switchTo().window(lastWindow);
+
         Assert.assertEquals(webdriver().driver().getCurrentFrameUrl(), baseUrl + "finance/","opened" +
                 " page doesn't equal banks");
 
@@ -45,8 +49,8 @@ public class SimbirSoftTests {
     }
 
     @Test
-    void test(){
-        _logger.debug("SimbirSoftTest.test");
+    void jobsTest(){
+        _logger.debug("SimbirSoftTest.jobsTest");
         open(baseUrl);
 
         $(By.xpath("//div[@class=\"gh-nav-item \"]//a[contains(text(), \"Вакансии\")]"))

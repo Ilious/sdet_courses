@@ -1,6 +1,6 @@
 import lesson2.Login;
-    import lesson2.WrongLoginException;
-    import lesson2.WrongPasswordException;
+import lesson2.WrongLoginException;
+import lesson2.WrongPasswordException;
 import lesson3.Money;
 import lesson_4.Lesson4;
 

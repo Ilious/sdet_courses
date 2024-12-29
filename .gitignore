@@ -28,4 +28,6 @@ bin/
 .DS_Store
 /target/
 /logs/
+/allure-results/
+/build/
 JavaCourses.iml

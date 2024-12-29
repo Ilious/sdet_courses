@@ -9,7 +9,8 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
                 <configuration>
                     <suiteXmlFiles>
@@ -55,6 +56,13 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>2.0.9</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.29.0</version>
         </dependency>
 
     </dependencies>

@@ -3,13 +3,33 @@ import lesson2.WrongLoginException;
 import lesson2.WrongPasswordException;
 import lesson3.Money;
 import lesson_4.Lesson4;
+import lesson_7.JdbcHw;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        new Lesson4();
-//        printTasksTill4();
+        try {
+            JdbcHw.connect();
+
+            JdbcHw.dropIfExists();
+            JdbcHw.createTableEx();
+
+            JdbcHw.insertEx("Petr", "Petrovich", 10);
+            JdbcHw.readEx();
+
+            JdbcHw.psBatch("Petr", "Petrovich", 12);
+            JdbcHw.transactionEx("Petr", "Petrovich", 13);
+            JdbcHw.readEx();
+
+            JdbcHw.deleteByIdEx(1);
+
+            JdbcHw.disconnect();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
     private static void printTasksTill4(){
